@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     getTitle() {
-      return this.title;
+      return this.title + "!!!";
     }
   },
 }
