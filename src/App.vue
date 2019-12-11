@@ -5,12 +5,20 @@
    <a v-bind:href="url">Google</a> 
    <br>
    <a v-html="link">Google</a>
+
+    <counter />
+
   </div>
 </template>
 
 <script>
+import Counter from "@/components/Counter";
+
 export default {
   name: 'app',
+  components: {
+    'counter': Counter,
+  },
   data() {
     return {
       title: "Some Title",
