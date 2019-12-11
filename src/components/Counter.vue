@@ -4,10 +4,16 @@
         <br>
         <button v-on:click="increaseCounter">Increase</button>
         <button @click="decreaseCounter">Decrease</button>
+        <form>
+            <input type="submit"  @click.prevent="decreaseCounter" value="Decrease NoSubmit">
+        </form>
     </div>
 </template>
 
 <script>
+
+// v-[directive]:[attribute].[modifier]
+
 export default {
     name: "Counter",
     data() {
