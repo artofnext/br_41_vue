@@ -2,6 +2,7 @@
   <div>
    <h1 v-once>{{ title }}</h1>
    <p>{{ getTitle() }}</p>
+   <a v-bind:href="url">Google</a>
   </div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
   data() {
     return {
       title: "Some Title",
-      url: "",
+      url: "https://google.com",
     }
   },
   methods: {
