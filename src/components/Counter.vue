@@ -16,7 +16,10 @@ export default {
         }
     },
     methods: {
-        increaseCounter() {
+        increaseCounter(event) {
+
+
+            console.log(event);
             this.counter++;
             console.log('Click increase');
         },
