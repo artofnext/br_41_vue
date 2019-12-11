@@ -2,6 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld v-bind:msg="title"/>
+    <HelloWorld v-bind:msg="getTitle()"/>
     <!-- short v-bind -->
     <HelloWorld :msg="title"/> 
   </div>
@@ -20,6 +21,11 @@ export default {
   },
   components: {
     HelloWorld
-  }
+  },
+  methods: {
+    getTitle() {
+      return this.title;
+    }
+  },
 }
 </script>
