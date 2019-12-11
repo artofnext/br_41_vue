@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-   <h1>{{ title }}</h1>
+  <div>
+   <h1 v-once>{{ title }}</h1>
    <p>{{ getTitle() }}</p>
   </div>
 </template>
@@ -16,6 +16,8 @@ export default {
   },
   methods: {
     getTitle() {
+
+      this.title = "Other title";
       return this.title;
     }
   }
