@@ -3,6 +3,7 @@
         <h1>{{ counter }}</h1>
         <br>
         <button v-on:click="increaseCounter">Increase</button>
+        <button @click="decreaseCounter">Decrease</button>
     </div>
 </template>
 
@@ -17,7 +18,13 @@ export default {
     methods: {
         increaseCounter() {
             this.counter++;
-        }
+            console.log('Click increase');
+        },
+        decreaseCounter() {
+            this.counter--;
+            console.log('Click decrease');
+        },
+
     }
 }
 </script>
